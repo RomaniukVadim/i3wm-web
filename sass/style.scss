@@ -1,0 +1,156 @@
+@import "_normalize";
+
+// Top Bar Config //
+	$top_bar_height: 20px;
+	$top_bar_bg: #1F222D;
+	$top_bar_text_color: #545A72;
+	$top_bar_right_color: #C7CAD9;
+// Base Colors //
+	$bg-col:#232A30;
+	$text-color: white;
+	$urxvt_color: #101218;
+	$title_color: #232830;
+
+// Base Colors //
+
+// Base Fonts //
+	$base_font_size: 16px;
+	$hack: Hack, monospace;
+	$primary: Helvetica Neue,Helvetica,Arial,sans-serif;
+// Base Fonts //
+
+
+ body {
+ 	background-image: url('../img/bg.jpg'); 
+    background-color: $bg_col; 
+	background-position: right bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-size: cover;
+	color:$text-color;
+	font-size: $base_font_size;
+	font-family: $primary;
+   }
+
+ .top_bar {
+ 	position: fixed;
+ 	top: 0;
+ 	z-index: 999;
+ 	height: $top_bar_height;
+ 	width: 100%;
+ 	background-color: $top_bar_bg;
+ 	color: $top_bar_text_color;
+ 	 /* unvisited link */
+		a:link {
+		    color: $top_bar_text_color;
+		    cursor: default;
+		}
+
+		/* visited link */
+		a:visited {
+		    color: $top_bar_text_color;
+		    cursor: default;
+		}
+
+		/* mouse over link */
+		a:hover {
+		    color: $text-color;
+		    cursor: default;
+		}
+
+		/* selected link */
+		a:active {
+		    color: $text-color;
+		    cursor: default;
+		}
+ }
+	
+ .top_bar_left{
+ 	font-size: 12px;
+	left: 0;
+	margin: 0;
+	float: left;
+		i {
+			margin: 4px 0 0 8px;
+		}
+ }
+
+ .top_bar_right{
+ 	color: $top_bar_right_color;	
+ 	font-size: 12px;
+	float:right;
+	margin: 2px 8px 0 0;
+	p{
+		display: inline;
+	}
+	i{
+		margin:0 0 0 4px;
+	}
+ }
+
+ .main {
+ 	background-color: none;
+ 	display: block;
+ 	width: 1024px;
+ 	height: 95%;
+ 	margin: 20px auto;
+ }
+
+ #system_info {
+ 	background-color: $title_color;
+ 	border:3px solid $top_bar_bg;
+ 	float: left;
+ 	height: 358px;
+ 	width: 546px;
+ 	margin-top: 20px;
+ }
+
+.sys_img {
+ 	width: 546px;
+ 	height: 344px;
+ }
+
+#cmd_fm {
+	float: right;
+	background-color: $title_color;
+	width: 444px;
+	height: 359px;
+	border:3px solid $top_bar_bg;
+	margin-top: 20px;
+}
+
+.title {
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	font-family: $hack;
+	font-size: 12px;
+}
+
+#cmd_games {
+	float: right;
+	background-color: $title_color;
+	width: 536px;
+	height: 473px;
+	border:3px solid $top_bar_bg;
+	margin-top: 20px;
+}
+
+#startpage {
+	margin-top: 40px;
+	background-color: $title_color;
+	width: 1024px;
+	height: 600px;
+	border:3px solid $top_bar_bg;
+}
+
+#cmd_news {
+	float: left;
+	background-color: $title_color;
+	width: 454px;
+	height: 659px;
+	border:3px solid $top_bar_bg;
+	margin-top: 20px;
+}
+
