@@ -12,4 +12,4 @@ See also the list of [contributors](https://github.com/RomaniukVadim/i3wm-web/co
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License v3.0 License - see the [LICENSE.md](LICENSE.md) file for details
